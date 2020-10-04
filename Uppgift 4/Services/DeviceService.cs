@@ -26,13 +26,7 @@ namespace Testing
 
             var payload = new Message(Encoding.UTF8.GetBytes(json));
             await deviceClient.SendEventAsync(payload);
-
-
-
-
         }
-
-
     }
 }
  

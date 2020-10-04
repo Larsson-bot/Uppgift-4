@@ -32,19 +32,12 @@ namespace Uppgift_4
         public MainPage()
         {
             this.InitializeComponent();
-
             ReceiveMessageAsync().GetAwaiter();
-          
-                
-            
-            
-
         }
 
         private  void SendMessage_Click(object sender, RoutedEventArgs e)
         {
             DeviceService.SendMessageAsync(deviceClient).GetAwaiter();
-
         }
 
         private async Task ReceiveMessageAsync()
